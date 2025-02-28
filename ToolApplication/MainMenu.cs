@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace ToolApplication
 {
-    public partial class Form1 : Form
+    public partial class MainMenu : Form
     {
-        public Form1()
+        public MainMenu()
         {
             InitializeComponent();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            PasswordGen passwordGen = new PasswordGen();
+            passwordGen.Show();
         }
     }
 }

@@ -33,6 +33,7 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.storagegroup_box = new System.Windows.Forms.GroupBox();
             this.listBoxClipboard = new System.Windows.Forms.ListBox();
+            this.networkInfo = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.storagegroup_box.SuspendLayout();
             this.SuspendLayout();
@@ -41,10 +42,11 @@
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1});
+            this.toolStripButton1,
+            this.networkInfo});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(564, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(705, 39);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -54,7 +56,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(143, 24);
+            this.toolStripButton1.Size = new System.Drawing.Size(143, 36);
             this.toolStripButton1.Text = "Password generator";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -76,6 +78,16 @@
             this.listBoxClipboard.Size = new System.Drawing.Size(527, 212);
             this.listBoxClipboard.TabIndex = 0;
             this.listBoxClipboard.DoubleClick += new System.EventHandler(this.listBoxClipboard_DoubleClick);
+            // 
+            // networkInfo
+            // 
+            this.networkInfo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.networkInfo.Image = ((System.Drawing.Image)(resources.GetObject("networkInfo.Image")));
+            this.networkInfo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.networkInfo.Name = "networkInfo";
+            this.networkInfo.Size = new System.Drawing.Size(151, 36);
+            this.networkInfo.Text = "Network information";
+            this.networkInfo.Click += new System.EventHandler(this.networkInfo_Click);
             // 
             // MainMenu
             // 
@@ -101,6 +113,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.GroupBox storagegroup_box;
         private System.Windows.Forms.ListBox listBoxClipboard;
+        private System.Windows.Forms.ToolStripButton networkInfo;
     }
 }
 

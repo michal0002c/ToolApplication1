@@ -104,5 +104,11 @@ namespace ToolApplication
                 }
             }
         }
+
+        private void networkInfo_Click(object sender, EventArgs e)
+        {
+            NetworkInfo network = new NetworkInfo();
+            network.Show();
+        }
     }
 }

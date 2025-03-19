@@ -52,6 +52,12 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="NetworkInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetworkInfo.Designer.cs">
+      <DependentUpon>NetworkInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="PasswordGen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetworkInfo.resx">
+      <DependentUpon>NetworkInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PasswordGen.resx">
       <DependentUpon>PasswordGen.cs</DependentUpon>

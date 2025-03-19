@@ -84,8 +84,9 @@
             this.ClientSize = new System.Drawing.Size(564, 303);
             this.Controls.Add(this.storagegroup_box);
             this.Controls.Add(this.toolStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainMenu";
-            this.Text = "Form1";
+            this.Text = "Toolbox";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.storagegroup_box.ResumeLayout(false);

@@ -34,6 +34,7 @@
             this.storagegroup_box = new System.Windows.Forms.GroupBox();
             this.listBoxClipboard = new System.Windows.Forms.ListBox();
             this.networkInfo = new System.Windows.Forms.ToolStripButton();
+            this.searchFile = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.storagegroup_box.SuspendLayout();
             this.SuspendLayout();
@@ -43,7 +44,8 @@
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
-            this.networkInfo});
+            this.networkInfo,
+            this.searchFile});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(705, 39);
@@ -89,6 +91,16 @@
             this.networkInfo.Text = "Network information";
             this.networkInfo.Click += new System.EventHandler(this.networkInfo_Click);
             // 
+            // searchFile
+            // 
+            this.searchFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.searchFile.Image = ((System.Drawing.Image)(resources.GetObject("searchFile.Image")));
+            this.searchFile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.searchFile.Name = "searchFile";
+            this.searchFile.Size = new System.Drawing.Size(82, 36);
+            this.searchFile.Text = "Search file";
+            this.searchFile.Click += new System.EventHandler(this.searchFile_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -114,6 +126,7 @@
         private System.Windows.Forms.GroupBox storagegroup_box;
         private System.Windows.Forms.ListBox listBoxClipboard;
         private System.Windows.Forms.ToolStripButton networkInfo;
+        private System.Windows.Forms.ToolStripButton searchFile;
     }
 }
 

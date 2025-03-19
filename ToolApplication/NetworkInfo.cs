@@ -10,7 +10,7 @@ namespace ToolApplication
         {
             InitializeComponent();
             this.AutoSize = true;
-            this.AutoSizeMode = AutoSizeMode.GrowAndShrink; #test
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink; //#test
             DisplayNetworkInfo();
         }
 

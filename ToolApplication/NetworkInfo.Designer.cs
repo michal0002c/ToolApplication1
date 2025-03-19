@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NetworkInfo));
             this.networkLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -47,10 +48,11 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(282, 153);
             this.Controls.Add(this.networkLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(150, 200);
             this.Name = "NetworkInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "NetworkInfo";
+            this.Text = "Your network";
             this.ResumeLayout(false);
             this.PerformLayout();
 

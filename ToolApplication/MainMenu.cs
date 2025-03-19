@@ -111,7 +111,7 @@ namespace ToolApplication
             network.Show();
         }
 
-        private void searchFile_Click(object sender, EventArgs e)
+        private void calculator_Click(object sender, EventArgs e)
         {
             CalculatorForm calculator = new CalculatorForm();
             calculator.Show();

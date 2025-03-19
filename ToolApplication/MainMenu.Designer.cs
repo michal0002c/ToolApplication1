@@ -31,24 +31,25 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.networkInfo = new System.Windows.Forms.ToolStripButton();
+            this.calculator = new System.Windows.Forms.ToolStripButton();
             this.storagegroup_box = new System.Windows.Forms.GroupBox();
             this.listBoxClipboard = new System.Windows.Forms.ListBox();
-            this.networkInfo = new System.Windows.Forms.ToolStripButton();
-            this.searchFile = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.storagegroup_box.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
             // 
+            this.toolStrip1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.networkInfo,
-            this.searchFile});
+            this.calculator});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(705, 39);
+            this.toolStrip1.Size = new System.Drawing.Size(444, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -58,56 +59,58 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(143, 36);
+            this.toolStripButton1.Size = new System.Drawing.Size(156, 22);
             this.toolStripButton1.Text = "Password generator";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // networkInfo
+            // 
+            this.networkInfo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.networkInfo.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.networkInfo.Image = ((System.Drawing.Image)(resources.GetObject("networkInfo.Image")));
+            this.networkInfo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.networkInfo.Name = "networkInfo";
+            this.networkInfo.Size = new System.Drawing.Size(164, 22);
+            this.networkInfo.Text = "Network information";
+            this.networkInfo.Click += new System.EventHandler(this.networkInfo_Click);
+            // 
+            // calculator
+            // 
+            this.calculator.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.calculator.Image = ((System.Drawing.Image)(resources.GetObject("calculator.Image")));
+            this.calculator.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.calculator.Name = "calculator";
+            this.calculator.Size = new System.Drawing.Size(80, 36);
+            this.calculator.Text = "Calculator";
+            this.calculator.Click += new System.EventHandler(this.calculator_Click);
             // 
             // storagegroup_box
             // 
             this.storagegroup_box.Controls.Add(this.listBoxClipboard);
-            this.storagegroup_box.Location = new System.Drawing.Point(12, 30);
+            this.storagegroup_box.Location = new System.Drawing.Point(13, 35);
             this.storagegroup_box.Name = "storagegroup_box";
-            this.storagegroup_box.Size = new System.Drawing.Size(539, 255);
+            this.storagegroup_box.Size = new System.Drawing.Size(419, 191);
             this.storagegroup_box.TabIndex = 1;
             this.storagegroup_box.TabStop = false;
             this.storagegroup_box.Text = "Copied items: ";
             // 
             // listBoxClipboard
             // 
-            this.listBoxClipboard.ItemHeight = 16;
-            this.listBoxClipboard.Location = new System.Drawing.Point(6, 21);
+            this.listBoxClipboard.ItemHeight = 15;
+            this.listBoxClipboard.Location = new System.Drawing.Point(6, 25);
             this.listBoxClipboard.Name = "listBoxClipboard";
-            this.listBoxClipboard.Size = new System.Drawing.Size(527, 212);
+            this.listBoxClipboard.Size = new System.Drawing.Size(407, 154);
             this.listBoxClipboard.TabIndex = 0;
             this.listBoxClipboard.DoubleClick += new System.EventHandler(this.listBoxClipboard_DoubleClick);
             // 
-            // networkInfo
-            // 
-            this.networkInfo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.networkInfo.Image = ((System.Drawing.Image)(resources.GetObject("networkInfo.Image")));
-            this.networkInfo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.networkInfo.Name = "networkInfo";
-            this.networkInfo.Size = new System.Drawing.Size(151, 36);
-            this.networkInfo.Text = "Network information";
-            this.networkInfo.Click += new System.EventHandler(this.networkInfo_Click);
-            // 
-            // searchFile
-            // 
-            this.searchFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.searchFile.Image = ((System.Drawing.Image)(resources.GetObject("searchFile.Image")));
-            this.searchFile.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.searchFile.Name = "searchFile";
-            this.searchFile.Size = new System.Drawing.Size(82, 36);
-            this.searchFile.Text = "Search file";
-            this.searchFile.Click += new System.EventHandler(this.searchFile_Click);
-            // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 303);
+            this.ClientSize = new System.Drawing.Size(444, 243);
             this.Controls.Add(this.storagegroup_box);
             this.Controls.Add(this.toolStrip1);
+            this.Font = new System.Drawing.Font("Consolas", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainMenu";
             this.Text = "Toolbox";
@@ -126,7 +129,7 @@
         private System.Windows.Forms.GroupBox storagegroup_box;
         private System.Windows.Forms.ListBox listBoxClipboard;
         private System.Windows.Forms.ToolStripButton networkInfo;
-        private System.Windows.Forms.ToolStripButton searchFile;
+        private System.Windows.Forms.ToolStripButton calculator;
     }
 }
 

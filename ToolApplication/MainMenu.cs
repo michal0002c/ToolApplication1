@@ -24,6 +24,7 @@ namespace ToolApplication
             InitializeComponent();
             ClipboardNotification.ClipboardUpdate += OnClipboardUpdate;
             UpdateStorageGroupBox();
+
         }
 
         private void OnClipboardUpdate(object sender, EventArgs e)
@@ -116,5 +117,6 @@ namespace ToolApplication
             CalculatorForm calculator = new CalculatorForm();
             calculator.Show();
         }
+
     }
 }

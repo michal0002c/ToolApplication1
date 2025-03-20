@@ -21,20 +21,19 @@ namespace ToolApplication
 
         private void UpdateProgressBar(object sender, EventArgs e)
         {
-            if (!int.TryParse(textBoxPasswordLen.Text, out int length) || length < 0)
+            if (!int.TryParse(textBoxPasswordLen.Text, out int length) || length <= 0)
             {
                 passBar.Value = 0;
                 return;
             }
 
-            if (length <= 16)
-                passBar.Value = (length * 50) / 16;
-            else if (length <= 32)
-                passBar.Value = 50 + ((length - 16) * 50) / 16;
+            if (length <= 8)
+                passBar.Value = (length * 50) / 8;  
+            else if (length <= 16)
+                passBar.Value = 50 + ((length - 8) * 50) / 8;  
             else
-                passBar.Value = 100;
+                passBar.Value = 100;  
         }
-
         private void passGenButton_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(textBoxPasswordLen.Text, out int length) || length <= 0)

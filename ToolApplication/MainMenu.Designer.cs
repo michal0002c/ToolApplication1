@@ -109,8 +109,9 @@
             // 
             // storagegroup_box
             // 
-            this.storagegroup_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(162)))), ((int)(((byte)(188)))));
+            this.storagegroup_box.BackColor = System.Drawing.Color.Transparent;
             this.storagegroup_box.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.storagegroup_box.BorderRadius = 5;
             this.storagegroup_box.Controls.Add(this.listBoxClipboard);
             this.storagegroup_box.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(162)))), ((int)(((byte)(188)))));
             this.storagegroup_box.FillColor = System.Drawing.SystemColors.ActiveCaption;

@@ -5,9 +5,9 @@ namespace ToolApplication
 {
     public partial class CalculatorForm : Form
     {
-        private double _result;
-        private string _operator;
-        private bool _isOperatorClicked;
+        private double _result = 0;
+        private string _operator = null;
+        private bool _isOperatorClicked = false;
 
         public CalculatorForm()
         {
@@ -18,73 +18,82 @@ namespace ToolApplication
         {
             if (_isOperatorClicked)
             {
-                textBox1.Clear();
+                numericBox.Clear();
                 _isOperatorClicked = false;
             }
 
-            Button button = (Button)sender;
-            textBox1.Text += button.Text;
+            if (sender is Control button)
+            {
+                numericBox.Text += button.Text;
+            }
         }
 
         private void Operator_Click(object sender, EventArgs e)
         {
-            Button button = (Button)sender;
-
-            if (!double.TryParse(textBox1.Text, out double currentNumber))
+            if (!(sender is Control button) || !double.TryParse(numericBox.Text, out double currentNumber))
             {
                 return;
             }
 
-            if (_operator != string.Empty && !_isOperatorClicked)
+            if (!string.IsNullOrEmpty(_operator) && !_isOperatorClicked)
             {
-                btnEqual.PerformClick();
+                BtnEqual_Click(this, EventArgs.Empty);
             }
 
             _operator = button.Text;
-
             _result = currentNumber;
             _isOperatorClicked = true;
-            textBox1.Clear();
         }
 
         private void BtnEqual_Click(object sender, EventArgs e)
         {
-            if (_operator == string.Empty || !double.TryParse(textBox1.Text, out double currentNumber))
+            if (string.IsNullOrEmpty(_operator) || !double.TryParse(numericBox.Text, out double currentNumber))
                 return;
+
+            double result = _result;
 
             switch (_operator)
             {
                 case "+":
-                    textBox1.Text = (_result + currentNumber).ToString();
+                    result += currentNumber;
                     break;
                 case "-":
-                    textBox1.Text = (_result - currentNumber).ToString();
+                    result -= currentNumber;
                     break;
                 case "*":
-                    textBox1.Text = (_result * currentNumber).ToString();
+                    result *= currentNumber;
                     break;
                 case "/":
-                    if (currentNumber != 0)
-                    {
-                        textBox1.Text = (_result / currentNumber).ToString();
-                    }
-                    else
+                    if (currentNumber == 0)
                     {
                         MessageBox.Show("Cannot divide by zero!");
-                        textBox1.Clear();
+                        numericBox.Clear();
+                        return;
                     }
+                    result /= currentNumber;
                     break;
+                default:
+                    return;
             }
 
-            _result = Double.Parse(textBox1.Text);
-            _operator = string.Empty;
+            if (!double.IsNaN(result) && !double.IsInfinity(result))
+            {
+                numericBox.Text = result.ToString();
+                _result = result;
+            }
+            else
+            {
+                numericBox.Text = "Error";
+            }
+
+            _operator = null;
         }
 
         private void BtnClear_Click(object sender, EventArgs e)
         {
-            textBox1.Clear();
+            numericBox.Clear();
             _result = 0;
-            _operator = string.Empty;
+            _operator = null;
             _isOperatorClicked = false;
         }
     }

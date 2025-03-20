@@ -15,8 +15,6 @@ namespace ToolApplication
     {
         private const int MaxClipboardEntries = 50;
         private List<string> clipboardHistory = new List<string>();
-        private NotifyIcon trayIcon;
-        private ContextMenuStrip trayMenu;
         private int copiedItemsCount = 0;
 
         public MainMenu()

@@ -48,5 +48,5 @@ This project is open-source and available under the [MIT License](LICENSE).
 Feel free to fork this repository and submit pull requests with improvements!
 
 ## Contact
-For any issues or suggestions, please open an issue on GitHub or reach out to me at [your-email@example.com](mailto:your-email@example.com).
+For any issues or suggestions, please open an issue on GitHub or reach out to me.
 

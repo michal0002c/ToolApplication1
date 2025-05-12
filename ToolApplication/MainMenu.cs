@@ -116,5 +116,10 @@ namespace ToolApplication
             calculator.Show();
         }
 
+        private void textComparisonbtn_Click(object sender, EventArgs e)
+        {
+            TextComparison textComparison = new TextComparison();
+            textComparison.Show();
+        }
     }
 }

@@ -375,6 +375,8 @@
             this.Controls.Add(this.btn1);
             this.Font = new System.Drawing.Font("Consolas", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CalculatorForm";
             this.Text = "Calculator";
             this.ResumeLayout(false);

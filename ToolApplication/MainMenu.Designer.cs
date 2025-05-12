@@ -35,6 +35,7 @@
             this.networkInfo = new System.Windows.Forms.ToolStripButton();
             this.listBoxClipboard = new System.Windows.Forms.ListBox();
             this.storagegroup_box = new Siticone.Desktop.UI.WinForms.SiticoneGroupBox();
+            this.textComparisonbtn = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.storagegroup_box.SuspendLayout();
             this.SuspendLayout();
@@ -50,13 +51,14 @@
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.calculator,
+            this.textComparisonbtn,
             this.passGen,
             this.networkInfo});
             this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(5);
-            this.toolStrip1.Size = new System.Drawing.Size(214, 290);
+            this.toolStrip1.Size = new System.Drawing.Size(214, 379);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -127,12 +129,25 @@
             this.storagegroup_box.TabIndex = 2;
             this.storagegroup_box.Text = "Copied items:";
             // 
+            // textComparisonbtn
+            // 
+            this.textComparisonbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(162)))), ((int)(((byte)(188)))));
+            this.textComparisonbtn.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textComparisonbtn.Image = ((System.Drawing.Image)(resources.GetObject("textComparisonbtn.Image")));
+            this.textComparisonbtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.textComparisonbtn.Name = "textComparisonbtn";
+            this.textComparisonbtn.Padding = new System.Windows.Forms.Padding(20);
+            this.textComparisonbtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textComparisonbtn.Size = new System.Drawing.Size(203, 71);
+            this.textComparisonbtn.Text = "Comparison";
+            this.textComparisonbtn.Click += new System.EventHandler(this.textComparisonbtn_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(771, 290);
+            this.ClientSize = new System.Drawing.Size(771, 379);
             this.Controls.Add(this.storagegroup_box);
             this.Controls.Add(this.toolStrip1);
             this.Font = new System.Drawing.Font("Consolas", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -154,6 +169,7 @@
         private System.Windows.Forms.ToolStripButton networkInfo;
         private System.Windows.Forms.ToolStripButton calculator;
         private Siticone.Desktop.UI.WinForms.SiticoneGroupBox storagegroup_box;
+        private System.Windows.Forms.ToolStripButton textComparisonbtn;
     }
 }
 

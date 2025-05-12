@@ -34,8 +34,9 @@ Toolbox is a Windows Forms application designed to provide essential utilities i
 
 
 ## Screenshots
-![image](https://github.com/user-attachments/assets/37ef66df-25d8-4c0d-afa8-43b2143ec92d)
+![image](https://github.com/user-attachments/assets/7128cc34-d8e4-4562-9a6a-08befc9ffe53)
 ![image](https://github.com/user-attachments/assets/f664a3f7-6c66-49e4-961f-882f40f34031)
+![image](https://github.com/user-attachments/assets/6440a7dd-8155-426a-9eb6-b5fb490ef662)
 ![image](https://github.com/user-attachments/assets/0fd9d804-2929-4a93-8eda-36811016aa0c)
 ![image](https://github.com/user-attachments/assets/c18946ea-7284-44da-860e-1f6a5e6c9049)
 

@@ -8,6 +8,10 @@ Toolbox is a Windows Forms application designed to provide essential utilities i
 - Easily copy and manage text snippets.
 - Quick access to copied content.
 
+### 🗒 Text Comparison
+- Compare two texts to see the differences between them.
+- Highlights all changes, including line and character positions.
+ 
 ### 🧮 Simple Calculator
 - Perform basic arithmetic operations with an intuitive interface.
 - Ideal for quick calculations without opening a separate app.
